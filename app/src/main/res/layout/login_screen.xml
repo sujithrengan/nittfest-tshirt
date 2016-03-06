@@ -1,0 +1,126 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bg"
+
+        android:background="@drawable/tiles"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/festemberLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:padding="32dp"
+
+        android:src="@drawable/logo_nc" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/form"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/rollNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Roll number"
+
+
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@nitt.edu"
+
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Webmail password"
+
+
+
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/showPasswordCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:alpha="80"
+        android:background="@drawable/button_style"
+        android:text="Sign in"
+        android:textColor="@drawable/btnlog"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:id="@+id/tag"
+        android:text="@string/Love" />
+
+</LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
