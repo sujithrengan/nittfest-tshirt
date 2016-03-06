@@ -149,7 +149,7 @@ public class ConfirmPage extends ActionBarActivity {
                     //   Toast.makeText(ConfirmPage.this, error, Toast.LENGTH_SHORT).show();
                     //   break;
                     case 2:
-                    case 3:
+                    //case 3:
                         SharedPreferences prefs = Utilities.prefs;
                         SharedPreferences.Editor editor = prefs.edit();
                         editor.putInt("status", Utilities.status);

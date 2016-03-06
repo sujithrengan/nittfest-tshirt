@@ -57,9 +57,9 @@ public class WelcomePage extends ActionBarActivity {
         setContentView(R.layout.activity_welcome_page);
         TextView welcomeText = (TextView) findViewById(R.id.welcomeText);
         welcomeText.setText(welcomeText.getText().toString() + Utilities.username);
-        couponButton = (Button) findViewById(R.id.couponSelect);
-        couponButton.setText(Utilities.coupon);
-        couponButton.setOnClickListener(new View.OnClickListener() {
+        //couponButton = (Button) findViewById(R.id.couponSelect);
+        //couponButton.setText(Utilities.coupon);
+        /*couponButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
@@ -73,10 +73,11 @@ public class WelcomePage extends ActionBarActivity {
                 }
             }
         });
+        */
 
-        TextView hlptxt = (TextView) findViewById(R.id.helpText);
+        //TextView hlptxt = (TextView) findViewById(R.id.helpText);
 
-        hlptxt.setOnClickListener(new View.OnClickListener() {
+        /*hlptxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -95,6 +96,7 @@ public class WelcomePage extends ActionBarActivity {
 
             }
         });
+        */
         if (Utilities.status == 2) {
             //couponButton.setVisibility(View.INVISIBLE);
             ImageView qrCodeImage = (ImageView) findViewById(R.id.qr_code_image);
@@ -105,8 +107,8 @@ public class WelcomePage extends ActionBarActivity {
                 qrCodeImage.setImageBitmap(bitmap);
             }
 
-            if (Utilities.coupon.equals("meh."))
-                new coupTask().execute();
+            //if (Utilities.coupon.equals("meh."))
+              //  new coupTask().execute();
         }
     }
 
@@ -209,7 +211,7 @@ public class WelcomePage extends ActionBarActivity {
     }
 
 
-    class coupTask extends AsyncTask<String, Void, String> {
+    /*class coupTask extends AsyncTask<String, Void, String> {
 
 
         @Override
@@ -274,6 +276,7 @@ public class WelcomePage extends ActionBarActivity {
             Toast.makeText(WelcomePage.this, "Coupon received", Toast.LENGTH_SHORT).show();
         }
     }
+    */
 
 
 }

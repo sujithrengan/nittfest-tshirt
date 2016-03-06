@@ -110,11 +110,11 @@ public class LoginActivity extends Activity {
 
 
 
-                    //new myAsyncTask().execute();
+                    new myAsyncTask().execute();
                     //Testing
 
-                    Intent i = new Intent(LoginActivity.this, Coupon.class);
-                    LoginActivity.this.startActivity(i);
+                //    Intent i = new Intent(LoginActivity.this, Coupon.class);
+                //    LoginActivity.this.startActivity(i);
 
                     button.setClickable(false);
                 }
@@ -221,7 +221,7 @@ public class LoginActivity extends Activity {
                     finish();
                     break;
                 case 3:
-                    Toast.makeText(LoginActivity.this, "Your account is not on the system. Please contact Pragyan OC", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Your account is not on the system. Please contact NITTFEST OC", Toast.LENGTH_SHORT).show();
                     rollNumberText.setText("");
                     passwordText.setText("");
                     button.setClickable(true);

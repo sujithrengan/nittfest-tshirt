@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Pragyan_tshirt-master.iml" filepath="$PROJECT_DIR$/Pragyan_tshirt-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nittfest-tshirt.iml" filepath="$PROJECT_DIR$/nittfest-tshirt.iml" />
     </modules>
   </component>
 </project>

@@ -19,7 +19,7 @@ public class SaveImage {
     public static File getSavePath() {
         File path;
         if (hasSDCard()) { // SD card
-            path = new File(getSDCardPath() + "/Pragyan/");
+            path = new File(getSDCardPath() + "/NITTFEST/");
             path.mkdir();
         } else {
             path = Environment.getDataDirectory();

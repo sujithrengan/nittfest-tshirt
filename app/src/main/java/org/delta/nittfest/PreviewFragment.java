@@ -39,7 +39,7 @@ public class PreviewFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (times % 2 == 0) {
+                if (times % 2 == 1) {
                     imageView.setImageResource(R.drawable.app_front);
                 } else imageView.setImageResource(R.drawable.app_back);
                 times++;
